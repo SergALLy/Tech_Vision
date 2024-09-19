@@ -27,7 +27,7 @@ while (True):
         break
     b,g,r = cv2.split(img) # Делим на одельный каналы
     img_n = cv2.merge([b,r,g]) # Собираем BRG 
-    cv2.imshow(window_name,img)
+    cv2.imshow(window_name,img_n)
     if cv2.waitKey(4000)==27: 
         cv2.destroyAllWindows(window_name)
         break
