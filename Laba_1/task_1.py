@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-path = 'photo.jpg'
+path = 'Laba_0\\photo.jpg'
 window_name = 'figure 1'
 while (True):
     img = cv2.imread(path, flags=cv2.IMREAD_COLOR) # Чтение в формате BGR
