@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-path = 'Paint.jpg'
+path = 'Paint.jpg' 
 window_name = 'figure 2'
 font = cv2.FONT_HERSHEY_COMPLEX
 fontScale = 0.8
