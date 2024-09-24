@@ -4,6 +4,7 @@ path = 'Laba_2\\2-0.jpg'
 window_name = 'figure_1'
 window_name_2 = 'figure_2'
 img=cv2.imread(path,flags=cv2.IMREAD_REDUCED_GRAYSCALE_4)
+# img_n = cv2.adaptiveThreshold(img,255, cv2.ADAPTIVE_THRESH_MEAN_C,cv2.THRESH_BINARY,47,55)
 img_n = cv2.adaptiveThreshold(img,255, cv2.ADAPTIVE_THRESH_MEAN_C,cv2.THRESH_BINARY,47,55)
 cv2.namedWindow(window_name,cv2.WINDOW_AUTOSIZE)
 cv2.namedWindow(window_name_2,cv2.WINDOW_AUTOSIZE)
