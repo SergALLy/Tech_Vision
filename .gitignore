@@ -1,0 +1,6 @@
+#.gitignore
+Photo/
+Lections/
+**.docx
+**.pdf
+test.py
