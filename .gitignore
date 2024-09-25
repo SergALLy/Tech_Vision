@@ -1,6 +1,6 @@
 #.gitignore
 Photo/
 Lections/
-*.docx
-*.pdf
+/*.docx
+/*.pdf
 test.py
