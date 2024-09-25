@@ -12,5 +12,5 @@ cv2.namedWindow(window_name_2,cv2.WINDOW_GUI_EXPANDED)
 cv2.imshow(window_name,img) # Показать изображение в окне wimdow_name
 cv2.imshow(window_name_2,img_n )
 if cv2.waitKey(0)==121: # При нажатии на Y сохранить img_n
-    cv2.imwrite('task_1.jpg',img_n)
+    cv2.imwrite('Photo\\task_1.jpg',img_n)
 cv2.destroyAllWindows() # Удвлить все окна

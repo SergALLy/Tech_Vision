@@ -25,6 +25,6 @@ cv2.imshow(window_name_3,img1 )
 cv2.imshow(window_name_4,img_n1 )
 # Нажали Y - сохранить img_n и img_n1
 if cv2.waitKey(0)==121:
-    cv2.imwrite('task_3_1.jpg',img_n)
-    cv2.imwrite('task_3_2.jpg',img_n1)
+    cv2.imwrite('Photo\\task_3_1.jpg',img_n)
+    cv2.imwrite('Photo\\task_3_2.jpg',img_n1)
 cv2.destroyAllWindows() # Удалить окна

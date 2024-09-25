@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-path = 'Desk.jpg'
+path = 'Photo\\Desk.jpg'
 window_name= 'figure 3'
 step=10
 hight = 40*step

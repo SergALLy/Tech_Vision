@@ -15,5 +15,5 @@ cv2.imshow(window_name,img)
 cv2.imshow(window_name_2,img_n )
 # Нажата Y - сохранить img_n
 if cv2.waitKey(0)==121:
-    cv2.imwrite('task_5.jpg',img_n)
+    cv2.imwrite('Photo\\task_5.jpg',img_n)
 cv2.destroyAllWindows()

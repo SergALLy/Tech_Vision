@@ -11,7 +11,7 @@ while(True):
     key=cv2.waitKey(1)
     # Нажали Y - сохранить кадр
     if key == 113:
-        cv2.imwrite('task_4.jpg',frame)
+        cv2.imwrite('Photo\\task_4.jpg',frame)
     # Нажали ESC - выйти
     elif key==27:
         cv2.destroyAllWindows()
