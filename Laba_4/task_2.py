@@ -22,7 +22,8 @@ ksize = np.array([[0.5, 0.75, 0.5],
 h = 3
 
 while 1:
-    img_new = cv2.morphologyEx(img_new, cv2.MORPH_OPEN, ksize, iterations=1,borderType=cv2.BORDER_CONSTANT,borderValue=(255,255,255)) # Размыкание
-    img_new = cv2.medianBlur(img_new,h) # Медианный фильтр
+    for i in range (2):
+        img_new = cv2.morphologyEx(img_new, cv2.MORPH_OPEN, ksize, iterations=1,borderType=cv2.BORDER_CONSTANT,borderValue=(255,255,255)) # Размыкание
+        img_new = cv2.medianBlur(img_new,h) # Медианный фильтр
     cv2.imshow(window, img_new)
     save_or_break(img_new)
