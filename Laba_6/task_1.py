@@ -9,10 +9,10 @@ def save_or_break(img, path): # Сохранение
         cv2.destroyAllWindows()
         sys.exit(1)
 
-img = cv2.imread('Laba_6/6-1.png',cv2.IMREAD_GRAYSCALE)
+img = cv2.imread('Laba_6\\6-1.png',cv2.IMREAD_GRAYSCALE)
 window = 'image'
-
 cv2.namedWindow(window, cv2.WINDOW_GUI_EXPANDED)
+
 _, img2 = cv2.threshold(img, 75, 255, cv2.THRESH_BINARY)
 img2 = cv2.morphologyEx(img2, cv2.MORPH_CLOSE, np.full((2,2),1), iterations=1) # Замыкание
 
@@ -28,7 +28,7 @@ for i in range (0, len(contours)-1):
     elif (2*3.14*(r**2)*0.4875 <= cv2.contourArea(contours[i]) <= 3.14*(r**2)*1.5125)  and  (2*3.14*r*0.9 <= cv2.arcLength(contours[i], True) <= 2*3.14*r*1.1):
         cv2.drawContours(img, contours,contourIdx=i, color=(255,0,0), thickness=3)
     else:
-        cv2.drawContours(img, contours,contourIdx=i, color=(255,0,255), thickness=3)
+        cv2.drawContours(img, contours,contourIdx=i, color=(255,0,139), thickness=3)
         
 cv2.imshow(window, img)
-save_or_break(img, 'Photo/6-1.png')
+save_or_break(img, 'Photo\\6-1.png')
