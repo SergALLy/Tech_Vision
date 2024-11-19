@@ -30,7 +30,7 @@ while 1:
     cv2.imshow(window,img)
     save_or_break(img, 'Photo\\5-1.png')
 
-    img_2_Sob = cv2.Sobel(img_2, 0, 2, 2, scale=2, ksize=5, delta=10)
+    img_2_Sob = cv2.Sobel(img_2, 0, 2, 1, scale=2, ksize=5, delta=10)
     img_2_Lap = cv2.Laplacian(img_2, 0, scale=2, ksize=5, delta=10)
     cv2.putText(img_2_Sob,'Sobel',(10,150),font,fontScale=5,color=color,thickness=5)
     cv2.putText(img_2_Lap,'Laplacian',(10,150),font,fontScale=5,color=color,thickness=5)
@@ -40,7 +40,7 @@ while 1:
     cv2.imshow(window,img)
     save_or_break(img, 'Photo\\5-2.png')
 
-    img_3_Sob = cv2.Sobel(img_3, 0, 2, 2, scale=1, ksize=5, delta=10)
+    img_3_Sob = cv2.Sobel(img_3, 0, 3, 0, scale=1, ksize=5, delta=10)+cv2.Sobel(img_3, 0, 0, 3, scale=1, ksize=5, delta=10)
     img_3_Lap = cv2.Laplacian(img_3, 0, scale=1, ksize=5, delta=10)
     cv2.putText(img_3_Sob,'Sobel',(10,30),font,fontScale=1,color=color,thickness=1)
     cv2.putText(img_3_Lap,'Laplacian',(10,30),font,fontScale=1,color=color,thickness=1)

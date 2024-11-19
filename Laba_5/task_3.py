@@ -1,7 +1,7 @@
 import cv2, sys
 import numpy as np
 
-cap = cv2.VideoCapture('Laba_5\\video_5.mp4')
+cap = cv2.VideoCapture('Laba_5\\stop_line_1.mp4')
 while 1:
     ret, frame = cap.read()
     frame = cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
