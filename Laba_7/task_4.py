@@ -67,6 +67,7 @@ save_or_break(img_3, 'Photo\\7-5-3.png')
 # circles, flag = road_sign(img_4_g, dp=1, minDist=1, param1=100, param2=40 , minRadius=70, maxRadius=100)
 # if flag != 1:
 #     for i in range (0, circles.shape[1]):
-#         cv2.circle(img_4, center=(int(circles[0,i,0]),int(circles[0,i,1])), radius=int(circles[0,i,2]), color=(255,0,0), thickness=3, lineType=cv2.LINE_AA)
-# cv2.imshow(window, img_4)
-# save_or_break(img_2, 'Photo\\7-5-3.png')
+#         img_4_c = np.copy(img_4)
+#         cv2.circle(img_4_c, center=(int(circles[0,i,0]),int(circles[0,i,1])), radius=int(circles[0,i,2]), color=(255,0,0), thickness=3, lineType=cv2.LINE_AA)
+#         cv2.imshow(window, img_4_c)
+#         save_or_break(img_4, 'Photo\\7-5-4.png')
