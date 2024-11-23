@@ -24,8 +24,8 @@ hu_moments=[]
 # ищем 4, 13, 14
 
 for i in range(0,len(contours)-1):
-        moments.append(cv2.moments(contours[i+1], False))
-        hu_moments.append(cv2.HuMoments(moments[i]))
+    moments.append(cv2.moments(contours[i+1], False))
+    hu_moments.append(cv2.HuMoments(moments[i]))
 
 stars=[]
 pattern = moments[0]

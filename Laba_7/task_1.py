@@ -32,4 +32,4 @@ for i in range(0, len(lines)):
      draw_line(lines[i,0,0],lines[i,0,1], img, thickness=7, color=(255,255,255))
 
 cv2.imshow(window, img)
-save_or_break(img, 'Photo\\7-1')
+save_or_break(img, 'Photo\\7-1.png')
