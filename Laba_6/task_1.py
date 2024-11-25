@@ -17,7 +17,7 @@ _, img2 = cv2.threshold(img, 75, 255, cv2.THRESH_BINARY)
 img2 = cv2.morphologyEx(img2, cv2.MORPH_CLOSE, np.full((2,2),1), iterations=1) # Замыкание
 
 contours, hierarchy = cv2.findContours(img2, mode=cv2.RETR_LIST, method=cv2.CHAIN_APPROX_SIMPLE)
-
+print(hierarchy)
 img = cv2.cvtColor(img, cv2.COLOR_GRAY2BGR)
 for i in range (0, len(contours)-1):
     _,_,w,h=cv2.boundingRect(contours[i])

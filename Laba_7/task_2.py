@@ -15,7 +15,9 @@ cv2.namedWindow(window, cv2.WINDOW_AUTOSIZE)
 
 img = cv2.morphologyEx(img, cv2.MORPH_OPEN, np.full((3,3),0.1), iterations=2) # Размыкание
 img_g = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+
 _,img_b = cv2.threshold(img_g, 75, 255, cv2.THRESH_BINARY_INV)
+
 lines = cv2.HoughLinesP(img_b, rho = 4, theta = math.pi/180, threshold = 800, minLineLength = 100,maxLineGap= 5)
 circles = cv2.HoughCircles(img_g, method=cv2.HOUGH_GRADIENT, dp=2, minDist=10, param1=100,param2=50, minRadius=20, maxRadius=60)
 
